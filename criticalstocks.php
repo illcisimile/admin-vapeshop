@@ -26,7 +26,7 @@
             </div>
 
             <div class="card mt-4">
-              <div class="card-header">Critical Stocks Table</div>
+              <div class="card-header">Critical Stocks</div>
               <div class="card-body">
                 <div class="table-responsive">
                   <table class="table table-hover" id="critical_stocks_dataTable">

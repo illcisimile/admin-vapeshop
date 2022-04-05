@@ -25,7 +25,7 @@
             </div>
 
             <div class="card mt-4">
-              <div class="card-header">Products Table Archive</div>
+              <div class="card-header">Products Archive</div>
               <div class="card-body">
                 <div class="table-responsive">
                   <table class="table table-hover" id="products_archive_dataTable">

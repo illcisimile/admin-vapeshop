@@ -25,7 +25,7 @@
             </div>
 
             <div class="card mt-4">
-              <div class="card-header">Products Table</div>
+              <div class="card-header">List of Products</div>
               <div class="card-body">
                 <!-- Add modal -->
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#add_product_modal">Add new product</button>
