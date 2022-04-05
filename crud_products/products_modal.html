@@ -1,0 +1,139 @@
+<!-- Add product modal -->
+<div class="modal fade" id="add_product_modal" tabindex="-1" aria-labelledby="add_product" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="add_product">Add new product</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form action="crud_products/add_product.php" method="post" id="add_product_form">
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="product_name" class="form-label">Product name</label>
+            <input type="text" class="form-control" id="product_name" name="product_name" />
+          </div>
+
+          <div class="mb-3">
+            <label for="product_category" class="form-label">Category</label>
+            <select class="form-select" id="product_category" name="product_category">
+              <option value="Mod" selected>Mod</option>
+              <option value="Pod">Pod</option>
+              <option value="Atomizer">Atomizer</option>
+              <option value="Accessories">Accessories</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="brand" class="form-label">Brand</label>
+            <input type="text" class="form-control" id="brand" name="brand" />
+          </div>
+
+          <div class="mb-3">
+            <label for="supplier" class="form-label">Supplier</label>
+            <select class="form-select" id="supplier" name="supplier">
+              <option value="VapeOmatics Vape Lounge" selected>VapeOmatics Vape Lounge</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="price" class="form-label">Price</label>
+            <input type="number" class="form-control" id="price" name="price" />
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary">Save</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Edit product modal -->
+<div class="modal fade" id="edit_product_modal" tabindex="-1" aria-labelledby="edit_product" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="edit_product">Add new product</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form action="crud_products/edit_product.php" method="post" id="edit_product_form">
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="edit_product_name" class="form-label">Product name</label>
+            <input type="text" class="form-control" id="edit_product_name" name="edit_product_name" />
+          </div>
+
+          <div class="mb-3">
+            <label for="edit_product_category" class="form-label">Category</label>
+            <select class="form-select" id="edit_product_category" name="edit_product_category">
+              <option value="Mod" selected>Mod</option>
+              <option value="Pod">Pod</option>
+              <option value="Atomizer">Atomizer</option>
+              <option value="Accessories">Accessories</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="edit_brand" class="form-label">Brand</label>
+            <input type="text" class="form-control" id="edit_brand" name="edit_brand" />
+          </div>
+
+          <div class="mb-3">
+            <label for="edit_supplier" class="form-label">Supplier</label>
+            <select class="form-select" id="edit_supplier" name="edit_supplier">
+              <option value="VapeOmatics Vape Lounge" selected>VapeOmatics Vape Lounge</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="edit_price" class="form-label">Price</label>
+            <input type="number" class="form-control" id="edit_price" name="edit_price" />
+          </div>
+        </div>
+        <div class="modal-footer" id="edit_product_selector">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-success">Update</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Remove product modal -->
+<div class="modal fade" id="remove_product_modal" tabindex="-1" aria-labelledby="remove_product" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="remove_product">Remove product</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Are you sure you want to remove this product?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-danger" id="remove_product_button">Remove</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Restore product modal -->
+<div class="modal fade" id="restore_product_modal" tabindex="-1" aria-labelledby="restore_product" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="restore_product">Restore product</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Are you sure you want to restore this product?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary" id="restore_product_button">Restore</button>
+      </div>
+    </div>
+  </div>
+</div>

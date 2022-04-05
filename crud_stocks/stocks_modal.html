@@ -1,0 +1,43 @@
+<!-- Edit stock modal -->
+<div class="modal fade" id="edit_stock_modal" tabindex="-1" aria-labelledby="edit_stock" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="edit_stock">Edit product stock</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form action="crud_stocks/edit_stock.php" method="post" id="edit_stock_form">
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="edit_stock_name" class="form-label">Product name</label>
+            <input type="text" class="form-control" id="edit_stock_name" name="edit_stock_name" disabled />
+          </div>
+
+          <div class="mb-3">
+            <label for="edit_stock_category" class="form-label">Category</label>
+            <select class="form-select" id="edit_stock_category" name="edit_stock_category" disabled>
+              <option value="Mod" selected>Mod</option>
+              <option value="Pod">Pod</option>
+              <option value="Atomizer">Atomizer</option>
+              <option value="Accessories">Accessories</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="edit_quantity" class="form-label">Quantity</label>
+            <input type="number" class="form-control" id="edit_quantity" name="edit_quantity" />
+          </div>
+
+          <div class="mb-3">
+            <label for="edit_warning_quantity" class="form-label">Warning Quantity</label>
+            <input type="number" class="form-control" id="edit_warning_quantity" name="edit_warning_quantity" />
+          </div>
+        </div>
+        <div class="modal-footer" id="edit_stock_selector">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-success">Update</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
