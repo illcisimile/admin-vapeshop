@@ -5,7 +5,13 @@ $(document).ready(function () {
   // Fetch all products
   products_dataTable = $("#products_dataTable").DataTable({
     // Disable sorting option on Action column
-    columnDefs: [{ orderable: false, targets: 6 }],
+    columnDefs: [
+      { orderable: false, targets: 6 },
+      {
+        className: "text-center",
+        targets: "_all",
+      },
+    ],
     language: {
       search: "_INPUT_",
       searchPlaceholder: "Search for records",
@@ -16,7 +22,13 @@ $(document).ready(function () {
   // Fetch archived products
   products_archive_dataTable = $("#products_archive_dataTable").DataTable({
     // Disable sorting option on Action column
-    columnDefs: [{ orderable: false, targets: 6 }],
+    columnDefs: [
+      { orderable: false, targets: 6 },
+      {
+        className: "text-center",
+        targets: "_all",
+      },
+    ],
     language: {
       search: "_INPUT_",
       searchPlaceholder: "Search for records",

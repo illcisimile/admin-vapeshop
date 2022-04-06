@@ -4,8 +4,15 @@ let critical_stocks_dataTable;
 $(document).ready(function () {
   // Fetch all stocks
   stocks_dataTable = $("#stocks_dataTable").DataTable({
-    // Disable sorting option on Action column
-    columnDefs: [{ orderable: false, targets: 5 }],
+    columnDefs: [
+      // Disable sorting option on Action column
+      { orderable: false, targets: 5 },
+      // Set text alignment to center
+      {
+        className: "text-center",
+        targets: "_all",
+      },
+    ],
     language: {
       search: "_INPUT_",
       searchPlaceholder: "Search for records",
@@ -15,8 +22,15 @@ $(document).ready(function () {
 
   // Fetch all critical stocks
   critical_stocks_dataTable = $("#critical_stocks_dataTable").DataTable({
-    // Disable sorting option on Action column
-    columnDefs: [{ orderable: false, targets: 5 }],
+    columnDefs: [
+      // Disable sorting option on Action column
+      { orderable: false, targets: 5 },
+      // Set text alignment to center
+      {
+        className: "text-center",
+        targets: "_all",
+      },
+    ],
     language: {
       search: "_INPUT_",
       searchPlaceholder: "Search for records",
