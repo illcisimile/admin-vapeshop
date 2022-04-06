@@ -4,9 +4,10 @@ let products_archive_dataTable;
 $(document).ready(function () {
   // Fetch all products
   products_dataTable = $("#products_dataTable").DataTable({
-    // Disable sorting option on Action column
     columnDefs: [
+      // Disable sorting option on Action column
       { orderable: false, targets: 6 },
+      // Set text alignment to center
       {
         className: "text-center",
         targets: "_all",
@@ -21,9 +22,10 @@ $(document).ready(function () {
 
   // Fetch archived products
   products_archive_dataTable = $("#products_archive_dataTable").DataTable({
-    // Disable sorting option on Action column
     columnDefs: [
+      // Disable sorting option on Action column
       { orderable: false, targets: 6 },
+      // Set text alignment to center
       {
         className: "text-center",
         targets: "_all",
